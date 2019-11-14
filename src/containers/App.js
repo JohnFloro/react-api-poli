@@ -1,20 +1,21 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import Main from '../components/Main'
+import Layout from '../components/Layout.jsx';
+import Main from '../components/Main';
+import Login from '../components/Login';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
 const App = () => {
     return(
-        <>
-            <NavBar 
-                companyName="PopoPoli"
-                features="Caracteristicas"
-                pricing="Precios"
-                support="Soporte"
-                enterprise="Mis Productos"
-            />
-            <Main main="Venecosis"/>
-            <Footer char="SOSPoli"/>
-        </>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/login" component={Login} />
+                <Layout>
+                    <Route path="/main" component={Main} />
+                </Layout>
+                
+            </Switch>
+
+        </BrowserRouter>
     )
 };
 
