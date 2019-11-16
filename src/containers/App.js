@@ -1,19 +1,21 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import Main from '../components/Main'
+import Layout from '../components/Layout';
+import AlbumsContent from '../containers/AlbumsContent';
+import Login from '../components/Login';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 const App = () => {
     return(
         <>
-            <NavBar 
-                companyName="PopoPoli"
-                features="Caracteristicas"
-                pricing="Precios"
-                support="Soporte"
-                enterprise="Mis Productos"
-            />
-            <Main main="Venecosis"/>
-            <Footer char="SOSPoli"/>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" component={Login} />
+                    <Layout>
+                        <Route exact path="/album" component={AlbumsContent} />
+                    </Layout>
+                </Switch>
+            
+            </BrowserRouter>
+            
         </>
     )
 };

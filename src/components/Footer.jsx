@@ -1,45 +1,18 @@
 import React from 'react';
 
-const Footer = (props) => {
+const Footer = () => {
     return(
-        <footer className="pt-4 my-md-5 pt-md-5 border-top">
-            <div className="row">
-            <div className="col-12 col-md">
-                <img className="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24" />
-                <small className="d-block mb-3 text-muted">&copy; 2017-2019</small>
-            </div>
-            <div className="col-6 col-md">
-                <h5>Features</h5>
-                <ul className="list-unstyled text-small">
-                <li><a className="text-muted" href="#">Cool stuff</a></li>
-                <li><a className="text-muted" href="#">Random feature</a></li>
-                <li><a className="text-muted" href="#">Team feature</a></li>
-                <li><a className="text-muted" href="#">Stuff for developers</a></li>
-                <li><a className="text-muted" href="#">Another one</a></li>
-                <li><a className="text-muted" href="#">Last time</a></li>
-                </ul>
-            </div>
-            <div className="col-6 col-md">
-                <h5>Resources</h5>
-                <ul className="list-unstyled text-small">
-                <li><a className="text-muted" href="#">Resource</a></li>
-                <li><a className="text-muted" href="#">Resource name</a></li>
-                <li><a className="text-muted" href="#">Another resource</a></li>
-                <li><a className="text-muted" href="#">Final resource</a></li>
-                </ul>
-            </div>
-            <div className="col-6 col-md">
-                <h5>About</h5>
-                <ul className="list-unstyled text-small">
-                <li><a className="text-muted" href="#">Team</a></li>
-                <li><a className="text-muted" href="#">Locations</a></li>
-                <li><a className="text-muted" href="#">Privacy</a></li>
-                <li><a className="text-muted" href="#">Terms</a></li>
-                </ul>
-            </div>
+        <footer className="text-muted">
+            <div className="container">
+                <p className="float-right">
+                    <a href="#">Back to top</a>
+                </p>
+                <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+                <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
+                        href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
             </div>
         </footer>
-    )
+    );
 }
 
 export default Footer;
