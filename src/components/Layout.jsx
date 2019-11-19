@@ -6,7 +6,7 @@ const Layout = (props) => {
     return(
         <>
             <NavBar 
-                companyName="PopoPoli"
+                companyName="Poli"
                 features="Caracteristicas"
                 pricing="Precios"
                 support="Soporte"
